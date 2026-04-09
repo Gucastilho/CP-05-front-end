@@ -58,7 +58,6 @@ export default function Features() {
     <section id="funcionalidades" style={{ position: 'relative', zIndex: 1, background: 'var(--bg-primary)' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '5rem 2rem' }}>
 
-        {/* Header */}
         <div ref={el => refs.current[0] = el} className="reveal" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
           <div className="section-label"><i className="fa-solid fa-sparkles" /> Funcionalidades</div>
           <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, lineHeight: 1.15 }}>
@@ -67,10 +66,8 @@ export default function Features() {
           </h2>
         </div>
 
-        {/* Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
 
-          {/* Big card — full width */}
           <div
             ref={el => refs.current[1] = el}
             className="glass reveal"
@@ -96,7 +93,6 @@ export default function Features() {
               </div>
             </div>
 
-            {/* Mini player */}
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '16px', padding: '1.25rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'linear-gradient(135deg, var(--purple-glow), var(--accent))', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.1rem', flexShrink: 0 }}>
@@ -127,7 +123,6 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 02 — Playlists IA */}
           <div ref={el => refs.current[2] = el} className="glass reveal" style={{ padding: '2rem', transitionDelay: '.1s' }}>
             <FeatureNum n="02" />
             <div style={{ fontSize: '1.2rem', fontWeight: 700, fontFamily: 'Syne, sans-serif', marginBottom: '.75rem' }}>Playlists com IA</div>
@@ -151,7 +146,6 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 03 — Offline */}
           <div ref={el => refs.current[3] = el} className="glass reveal" style={{ padding: '2rem', transitionDelay: '.2s' }}>
             <FeatureNum n="03" />
             <div style={{ fontSize: '1.2rem', fontWeight: 700, fontFamily: 'Syne, sans-serif', marginBottom: '.75rem' }}>Modo Offline</div>
@@ -171,7 +165,6 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 04 — Discovery */}
           <div ref={el => refs.current[4] = el} className="glass reveal" style={{ padding: '2rem', transitionDelay: '.3s', gridColumn: 'span 1' }}>
             <FeatureNum n="04" />
             <div style={{ fontSize: '1.2rem', fontWeight: 700, fontFamily: 'Syne, sans-serif', marginBottom: '.75rem' }}>Descoberta Musical</div>

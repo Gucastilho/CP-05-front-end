@@ -17,14 +17,12 @@ export default function Footer() {
     <footer style={{ background: 'var(--bg-secondary)', borderTop: '1px solid var(--border-color)', position: 'relative', zIndex: 1 }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '3.5rem 2rem 2rem' }}>
 
-        {/* Grid */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
           gap: '3rem',
           marginBottom: '3rem',
         }}>
-          {/* Brand */}
           <div style={{ gridColumn: 'span 1' }}>
             <a href="#" style={{ textDecoration: 'none' }}>
               <span className="gradient-text" style={{ fontFamily: 'Syne, sans-serif', fontSize: '1.5rem', fontWeight: 800 }}>♪ Melodia</span>
@@ -54,7 +52,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
           {cols.map(col => (
             <div key={col.title}>
               <div style={{ fontFamily: 'Syne, sans-serif', fontSize: '.9rem', fontWeight: 700, marginBottom: '1.25rem' }}>{col.title}</div>
@@ -76,7 +73,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom */}
         <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <p style={{ fontSize: '.82rem', color: 'var(--text-muted)' }}>
             © {new Date().getFullYear()} Melodia. Todos os direitos reservados.

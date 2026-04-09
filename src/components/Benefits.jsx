@@ -42,7 +42,6 @@ export default function Benefits() {
     <section id="beneficios" style={{ position: 'relative', zIndex: 1, background: 'var(--bg-secondary)' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '5rem 2rem' }}>
 
-        {/* Header */}
         <div ref={el => refs.current[0] = el} className="reveal" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
           <div className="section-label">
             <i className="fa-solid fa-star" /> Por que Melodia?
@@ -56,7 +55,6 @@ export default function Benefits() {
           </p>
         </div>
 
-        {/* Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
           {benefits.map((b, i) => (
             <div

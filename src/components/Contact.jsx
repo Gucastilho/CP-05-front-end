@@ -63,7 +63,6 @@ export default function Contact() {
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '5rem 2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
 
-          {/* Left — info */}
           <div ref={el => refs.current[0] = el} className="reveal">
             <div className="section-label"><i className="fa-solid fa-envelope" /> Contato</div>
             <h2 style={{ fontSize: '2.2rem', fontWeight: 800, marginBottom: '1rem', fontFamily: 'Syne, sans-serif' }}>
@@ -82,7 +81,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — form */}
           <div ref={el => refs.current[1] = el} className="reveal" style={{ transitionDelay: '.15s' }}>
             <form
               onSubmit={handleSubmit}

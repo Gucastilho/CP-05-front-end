@@ -33,7 +33,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Mobile menu */}
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
         {links.map(l => (
           <a
@@ -69,14 +68,12 @@ export default function Navbar() {
           boxShadow: scrolled ? '0 1px 0 rgba(168,85,247,.15)' : 'none',
         }}
       >
-        {/* Logo */}
         <a href="#inicio" style={{ textDecoration: 'none' }}>
           <span className="gradient-text" style={{ fontFamily: 'Syne, sans-serif', fontSize: '1.5rem', fontWeight: 800 }}>
             ♪ Melodia
           </span>
         </a>
 
-        {/* Desktop links */}
         <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none', margin: 0, padding: 0 }} className="hidden md:flex">
           {links.map(l => (
             <li key={l.label}>
@@ -96,16 +93,9 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <button
             className="theme-toggle"
-            onClick={toggleTheme}
-            title="Alternar tema"
-            aria-label="Alternar entre modo escuro e claro"
-          />
-          {/* Hamburger */}
-          <button
             className="md:hidden"
             onClick={() => setMenuOpen(o => !o)}
             aria-label="Menu"

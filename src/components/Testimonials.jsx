@@ -61,13 +61,10 @@ export default function Testimonials() {
         </div>
       </div>
 
-      {/* Infinite scroll track */}
       <div className="testimonial-track" style={{ paddingBottom: '3rem' }}>
-        {/* Group 1 */}
         <div className="testimonial-group">
           {testimonials.map(t => <TestimonialCard key={t.name} t={t} />)}
         </div>
-        {/* Group 2 — clone for seamless loop */}
         <div className="testimonial-group" aria-hidden="true">
           {testimonials.map(t => <TestimonialCard key={t.name + '-clone'} t={t} />)}
         </div>

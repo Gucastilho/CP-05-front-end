@@ -13,7 +13,6 @@ const WAVE_BARS = [
 
 export default function Hero() {
   useEffect(() => {
-    // randomise waveform heights
     document.querySelectorAll('.wave-bar').forEach(bar => {
       bar.style.height = (Math.floor(Math.random() * 70) + 30) + 'px'
     })
@@ -24,7 +23,6 @@ export default function Hero() {
       id="inicio"
       style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}
     >
-      {/* Background */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
         background: `
@@ -34,7 +32,6 @@ export default function Hero() {
         `,
       }} />
 
-      {/* Orbs */}
       <div className="animate-float1" style={{
         position: 'absolute', width: '400px', height: '400px', borderRadius: '50%',
         background: 'radial-gradient(circle, rgba(124,58,237,.3), transparent 70%)',
@@ -46,10 +43,8 @@ export default function Hero() {
         filter: 'blur(70px)', bottom: '10%', left: '5%', pointerEvents: 'none',
       }} />
 
-      {/* Content */}
       <div style={{ position: 'relative', zIndex: 1, maxWidth: '1280px', margin: '0 auto', padding: '8rem 2rem 5rem', width: '100%' }}>
 
-        {/* Badge */}
         <div className="animate-fade-up" style={{
           display: 'inline-flex', alignItems: 'center', gap: '.5rem',
           background: 'rgba(168,85,247,.12)', border: '1px solid rgba(168,85,247,.3)',
@@ -60,7 +55,6 @@ export default function Hero() {
           NOVO — Qualidade de áudio sem igual
         </div>
 
-        {/* Title */}
         <h1
           className="animate-fade-up"
           style={{
@@ -74,7 +68,6 @@ export default function Hero() {
           Sua Forma.
         </h1>
 
-        {/* Description */}
         <p
           className="animate-fade-up"
           style={{
@@ -86,7 +79,6 @@ export default function Hero() {
           Descubra artistas incríveis, crie playlists personalizadas e experiencie o som da forma que ele foi criado — com a qualidade que você merece.
         </p>
 
-        {/* Actions */}
         <div className="animate-fade-up" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', animationDelay: '.3s' }}>
           <a href="#contato" className="btn-primary">
             <i className="fa-solid fa-headphones" />
@@ -98,7 +90,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats */}
         <div className="animate-fade-up" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', marginTop: '4rem', animationDelay: '.4s' }}>
           {[
             { num: '5M+',  label: 'Usuários ativos' },
@@ -113,7 +104,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Phone mockup — hidden on mobile/tablet */}
       <div
         className="animate-fade-left hidden lg:block"
         style={{ position: 'absolute', right: '2%', top: '50%', transform: 'translateY(-50%)', width: '420px' }}
@@ -130,7 +120,6 @@ export default function Hero() {
               borderRadius: '28px', overflow: 'hidden', padding: '1.5rem 1rem',
               minHeight: '400px', position: 'relative',
             }}>
-              {/* Status bar */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
                 <span style={{ fontSize: '.65rem', color: '#B8B0D0', fontWeight: 600 }}>9:41</span>
                 <div style={{ display: 'flex', gap: '.35rem', alignItems: 'center' }}>
@@ -140,18 +129,15 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* App header */}
               <p style={{ fontFamily: 'Syne,sans-serif', fontWeight: 800, fontSize: '.95rem', color: '#F0EDFF', marginBottom: '.25rem' }}>♪ Melodia</p>
               <p style={{ fontSize: '.7rem', color: '#6B6490', marginBottom: '1rem' }}>Tocando agora</p>
 
-              {/* Album art */}
               <div style={{ width: '100%', paddingTop: '100%', borderRadius: '18px', background: 'linear-gradient(135deg,#4C1D95,#7C3AED,#E879F9)', position: 'relative', marginBottom: '1rem' }}>
                 <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <i className="fa-solid fa-music" style={{ fontSize: '2.2rem', color: 'rgba(255,255,255,0.8)' }} />
                 </div>
               </div>
 
-              {/* Track info */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '.75rem' }}>
                 <div>
                   <p style={{ fontFamily: 'Syne,sans-serif', fontWeight: 700, fontSize: '.9rem', color: '#F0EDFF' }}>Neon Dreams</p>
@@ -160,7 +146,6 @@ export default function Hero() {
                 <i className="fa-solid fa-heart" style={{ color: '#A855F7' }} />
               </div>
 
-              {/* Waveform */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3px', height: '60px', margin: '1rem 0' }}>
                 {WAVE_BARS.map((b, i) => (
                   <div
@@ -171,7 +156,6 @@ export default function Hero() {
                 ))}
               </div>
 
-              {/* Controls */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '.5rem' }}>
                 <i className="fa-solid fa-backward-step" style={{ color: '#B8B0D0', fontSize: '1rem' }} />
                 <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'linear-gradient(135deg,#7C3AED,#A855F7)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
